@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    /* Fundo principal: Branco suave */
+    background-color: #F8FAFC; 
+    /* Texto principal: Cinza escuro */
+    color: #0F172A; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.perfil-container {
+    width: 500px;
+    padding: 20px 0;
+}
+
+.perfil-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    /* Borda da foto: Azul moderno */
+    border: 4px solid #3B82F6; 
+}
+
+.perfil-header h2 {
+    margin-top: 10px;
+    color: #0F172A; /* Texto principal */
+}
+
+.card {
+    /* Cards: Branco */
+    background: #FFFFFF; 
+    padding: 20px;
+    border-radius: 12px;
+    margin-bottom: 15px;
+    /* Adicionada uma leve sombra e borda para dar destaque no fundo claro */
+    border: 1px solid #E2E8F0; 
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.card h3 {
+    /* Títulos dos cards: Azul moderno */
+    color: #3B82F6; 
+    margin-bottom: 15px;
+}
+
+.card p {
+    margin-bottom: 10px;
+    /* Texto secundário para as informações de texto menor */
+    color: #64748B; 
+}
+
+/* Garante que o texto em negrito dentro dos parágrafos use o Texto Principal */
+.card p strong {
+    color: #0F172A;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #0F172A; /* Texto principal */
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    /* Fundo do input levemente cinza para contrastar com o card branco */
+    background: #F8FAFC; 
+    color: #0F172A; /* Texto digitado: Cinza escuro */
+    /* Bordas: Cinza claro */
+    border: 1px solid #E2E8F0; 
+    border-radius: 8px;
+    outline: none;
+}
+
+/* Efeito quando o usuário clica para digitar no input */
+.form-group input:focus {
+    border-color: #3B82F6; /* Borda fica azul moderno */
+}
+
+/* Cor do texto fantasma (placeholder) */
+.form-group input::placeholder {
+    color: #64748B; /* Texto secundário */
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    /* Cor principal: Azul moderno */
+    background-color: #3B82F6; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    /* Hover principal: Azul forte */
+    background-color: #2563EB; 
+}
+
+.tema {
+    margin-bottom: 15px;
+    color: #0F172A;
+}
+
+.btn-sair {
+    width: 100%;
+    padding: 12px;
+    /* Erro: Vermelho suave para o botão de sair */
+    background-color: #EF4444; 
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+
+.btn-sair:hover {
+    /* Um vermelho um pouco mais escuro ao passar o mouse */
+    background-color: #DC2626; 
+}
+
+#mensagem {
+    margin-top: 15px;
+    text-align: center;
+    /* Sucesso: Verde para a mensagem de sucesso */
+    color: #22C55E; 
+    font-weight: bold;
+}
